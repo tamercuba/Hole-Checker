@@ -10,7 +10,11 @@ Um simples programa que verifica a quantidade de "furos" em uma determinada pala
 
 ## Como utilizar
 
-> Em breve
+> Lembre-se que esse programa foi criado para ser rodado na versão 3.7.3 do Python.
+
+1. Primeiramente baixe o repositório no seu computador utilizando o comando `git clone https://github.com/tamercuba/Hole-Checker.git`
+2. Se quiser rodar os testes execute `python tests.py`
+3. Para utilizar diretamente o programa execute `python app.py` e digite a palavra a ser analizada.
 
 ## Contato
 
