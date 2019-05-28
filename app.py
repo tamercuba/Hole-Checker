@@ -26,16 +26,15 @@ def checa_buracos(inputword):
     if len(word) == 0:
         return 0
     else:
-        if not word.isalpha():
-            raise ValueError('Palavra com sintaxe incorreta')
-        palavra = remove_acentos(word)
-        buracos = 0
-        for letra in palavra:
-            buracos += template[letra]
-
-    return buracos
-
-
+        try:
+            palavra = remove_acentos(word)
+            buracos = 0
+            for letra in palavra:
+                buracos += template[letra]
+            return buracos
+        except KeyError:
+            raise KeyError('A palavra inserida deve conter apenas letras')
+        return buracos
 if __name__ == "__main__":
     palavra = str(input("Digite uma palavra (apenas letras): "))
     buracos = checa_buracos(palavra)
